@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: 'https://justkooker.github.io/Property_House_test/',
+  base: '/Property_House_test/',
 });
