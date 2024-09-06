@@ -1,0 +1,116 @@
+@import "../../assets/scss/variable";
+
+.footer {
+  padding: 60px 100px;
+  background-color: $black;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px;
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 82px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -41px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #606060;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white-milky;
+
+  & > p {
+    font-size: 3.315rem;
+    letter-spacing: 0.276px;
+  }
+
+  .slogan {
+    font-family: "Mustica Pro-SemiBold";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+}
+
+.contactList {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-grow: 1;
+  max-width: 842px;
+
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 254px;
+
+  &__title {
+    color: $white-milky;
+    font-family: "TransformaMix_Trial-SemiBold";
+    font-size: 2rem;
+    line-height: 1.44;
+  }
+
+  &__info {
+    color: $grey;
+    font-family: "Mustica Pro-SemiBold";
+    font-size: 1.6rem;
+    line-height: 1.625;
+  }
+}
+.other {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: $grey;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.11;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.4rem;
+    line-height: 1.428;
+  }
+}
+
+.media {
+  display: flex;
+  gap: 22px;
+
+  &__item {
+    color: $red;
+
+    &:hover {
+      color: $white-milky;
+    }
+  }
+}

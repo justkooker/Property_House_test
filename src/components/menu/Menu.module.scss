@@ -1,0 +1,17 @@
+@import "../../assets/scss/variable";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: top 0.3s ease;
+
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 200px 20px 60px 40px;
+    background-color: $white-milky;
+  }
+}

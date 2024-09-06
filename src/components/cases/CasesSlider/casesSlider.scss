@@ -1,0 +1,93 @@
+@import "../../../assets/scss/variable";
+
+.swiper {
+  position: relative !important;
+  width: 100%;
+  height: 908px;
+  margin: 0;
+
+  @media screen and (max-width: 800px) {
+    height: 820px;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100% !important;
+  max-width: 89% !important;
+  display: flex;
+  align-items: end;
+  height: 820px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: $red;
+
+  @media screen and (max-width: 800px) {
+    max-width: 94%;
+    height: 750px;
+  }
+  @media screen and (min-width: 1441px)  {
+    max-width: 100% !important;
+  }
+}
+
+.swiper-scrollbar {
+  width: calc(100% - 20px) !important;
+  height: 20px !important;
+  bottom: 34px !important;
+  left: 0 !important;
+  margin-right: 20px !important;
+
+  @media screen and (max-width: 800px) {
+    height: 14px !important;
+    bottom: 45px !important;
+    width: calc(100% - 10px) !important;
+  }
+}
+.swiper-scrollbar-drag {
+  width: 313px !important;
+  height: 20px;
+  background-color: $red;
+
+  @media screen and (max-width: 800px) {
+    width: 72px !important;
+    height: 14px;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 46%;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 14.427px;
+  justify-content: center;
+  align-items: center;
+  gap: 8.416px;
+  flex-shrink: 0;
+  border-radius: 120.225px;
+  border: 2.404px solid $white-milky;
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url(../../../assets/image/svg/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  backdrop-filter: blur(12px);
+
+  @media screen and (max-width: 800px) {
+    width: 40px;
+    height: 40px;
+    top: 38.5%;
+  }
+
+  &::after {
+    content: none;
+  }
+}
+.swiper-button-prev {
+  left: 20px;
+}
+.swiper-button-next {
+  right: 20px;
+  transform: rotate(180deg);
+}

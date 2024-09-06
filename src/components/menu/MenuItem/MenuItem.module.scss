@@ -1,0 +1,22 @@
+@import "../../../assets/scss/variable";
+
+.menuItem {
+  color: $white-milky;
+  font-family: "Brotesk-_Trial_-Semibold", serif;
+  font-size: 2.4rem;
+  line-height: 0.7;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  &__link {
+    opacity: 0.6;
+  }
+  &__link:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 800px) {
+    color: $black;
+
+  }
+}

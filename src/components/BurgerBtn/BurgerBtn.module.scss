@@ -1,0 +1,19 @@
+@import "../../assets/scss/variable";
+
+.button {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+
+
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    margin-right: auto;
+  }
+}

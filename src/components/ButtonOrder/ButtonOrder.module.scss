@@ -1,0 +1,25 @@
+@import "../../assets/scss/variable";
+
+.btn {
+  padding: 14px 40px;
+  color: $white-milky;
+  font-family: "Darker Grotesque";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 2px solid $white-milky;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white-milky;
+    color: $red;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../assets/scss/variable";
+
+.container {
+  padding-left: 20px;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 10px;
+  }
+  @media screen and (min-width: 1441px) {
+   padding-right: 20px;
+  }
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+
+  @media screen and (max-width: 800px) {
+    gap: 20px;
+    padding: 24px 20px;
+  }
+}
+.title {
+  color: $white-milky;
+  font-family: "Mustica Pro-SemiBold";
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 0.75;
+
+  @media screen and (max-width: 800px) {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+.cases {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1199px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: $white-milky;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 0.9;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 13px;
+      height: 13px;
+      background-color: $white-milky;
+      border-radius: 50%;
+
+      @media screen and (max-width: 800px) {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    gap: 8px;
+  }
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
+  z-index: -2;
+}

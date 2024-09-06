@@ -1,0 +1,41 @@
+@import "../../assets/scss/variable";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 80px;
+  padding: 80px 40px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    gap: 24px;
+    padding: 10px;
+  }
+}
+
+.title {
+  font-style: normal;
+  color: $black;
+  font-family: "Mustica Pro-SemiBold";
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1;
+
+  @media screen and (max-width: 800px) {
+    font-size: 2.8rem;
+  }
+}
+
+.text {
+  color: $grey;
+  font-family: "Darker Grotesque";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.6rem;
+    line-height: 1.375;
+  }
+}

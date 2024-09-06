@@ -1,0 +1,62 @@
+@import "../../assets/scss/variable";
+
+.fs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 750px;
+  background-color: #e3000b;
+  background-image: url(../../assets/image/img/background.webp);
+  background-position: top -65px left -160px;
+  background-repeat: no-repeat;
+  background-size: 118%;
+  border-radius: 40px;
+
+  @media screen and (max-width: 800px) {
+    background-image: url(../../assets/image/img/background-mob.webp);
+    background-position: top 24px left -60px;
+    background-size: 140%;
+  }
+}
+
+.title {
+  width: 100%;
+  max-width: 1300px;
+  font-family: "TransformaMix_Trial-SemiBold";
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 1;
+
+  @media screen and (max-width: 800px) {
+    font-size: 4.8rem;
+    line-height: 1;
+  }
+}
+
+.subtitle {
+  width: 100%;
+  max-width: 966px;
+  font-family: "Mustica Pro-SemiBold";
+  font-size: 4rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+    line-height: 1.272;
+
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  color: $white-milky;
+  padding: 40px 28px;
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 20px 60px;
+  }
+}

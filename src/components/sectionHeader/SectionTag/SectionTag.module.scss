@@ -1,0 +1,15 @@
+@import "../../../assets/scss/variable";
+
+.container {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+.text {
+  color: $red;
+  font-family: "TransformaMix_Trial-SemiBold";
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
